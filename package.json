@@ -1,0 +1,28 @@
+{
+  "name": "rtdb",
+  "version": "1.0.0",
+  "description": "In-memory database cum message broker",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "tiny",
+    "in-memory",
+    "database",
+    "tiny",
+    "cache",
+    "server",
+    "tiny",
+    "message",
+    "broker",
+    "tiny",
+    "realtime",
+    "database"
+  ],
+  "author": "Sivaraman",
+  "license": "ISC",
+  "dependencies": {
+    "net": "^1.0.2"
+  }
+}
