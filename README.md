@@ -28,7 +28,7 @@ netcat 127.0.0.1 1337
 ```
 netcat 127.0.0.1 1337
 SET sessionId 74850590-81ee-11ea-bc55-0242ac130003
-> ***OK***
+>>> OK
 ```
 
 ### GET &lt;KEY&gt;
@@ -36,35 +36,28 @@ SET sessionId 74850590-81ee-11ea-bc55-0242ac130003
 ```
 netcat 127.0.0.1 1337
 GET sessionId
-74850590-81ee-11ea-bc55-0242ac130003
-```
-### GET &lt;KEY&gt;
-
-```
-netcat 127.0.0.1 1337
-GET sessionId
-74850590-81ee-11ea-bc55-0242ac130003
+>>> 74850590-81ee-11ea-bc55-0242ac130003
 ```
 ### DELETE &lt;KEY&gt;
 
 ```
 netcat 127.0.0.1 1337
 DELETE sessionId
-OK
+>>> OK
 ```
 ### SUBSCRIBE &lt;TOPIC&gt;
 
 ```
 netcat 127.0.0.1 1337
 SUBSCRIBE news
-OK
+>>> OK
 ```
 ### UNSUBSCRIBE &lt;TOPIC&gt;
 
 ```
 netcat 127.0.0.1 1337
 UNSUBSCRIBE news
-OK
+>>> OK
 ```
 
 ### PUBLISH &lt;MESSAGE&gt;
