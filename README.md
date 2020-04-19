@@ -17,17 +17,66 @@ netcat 127.0.0.1 1337
 ## Commands
 - [SET](#Set)
 - [GET](#get)
-- [REMOVE](#remove)
+- [DELETE](#delete)
 - [SUBSCRIBE](#subscribe)
 - [UNSUBSCRIBE](#unsubscribe)
 - [PUBLISH](#publish)
 - [QUIT](#quit)
 
-## SET <KEY> <VALUE>
+### SET &lt;KEY&gt; &lt;VALUE&gt;
 
-Stores Key Value pair:
 ```
+netcat 127.0.0.1 1337
 SET sessionId 74850590-81ee-11ea-bc55-0242ac130003
+> ***OK***
+```
+
+### GET &lt;KEY&gt;
+
+```
+netcat 127.0.0.1 1337
+GET sessionId
+74850590-81ee-11ea-bc55-0242ac130003
+```
+### GET &lt;KEY&gt;
+
+```
+netcat 127.0.0.1 1337
+GET sessionId
+74850590-81ee-11ea-bc55-0242ac130003
+```
+### DELETE &lt;KEY&gt;
+
+```
+netcat 127.0.0.1 1337
+DELETE sessionId
+OK
+```
+### SUBSCRIBE &lt;TOPIC&gt;
+
+```
+netcat 127.0.0.1 1337
+SUBSCRIBE news
+OK
+```
+### UNSUBSCRIBE &lt;TOPIC&gt;
+
+```
+netcat 127.0.0.1 1337
+UNSUBSCRIBE news
 OK
 ```
 
+### PUBLISH &lt;MESSAGE&gt;
+
+```
+netcat 127.0.0.1 1337
+PUBLISH news COVID 19 Situation Report
+```
+
+### QUIT
+
+```
+netcat 127.0.0.1 1337
+QUIT
+```
